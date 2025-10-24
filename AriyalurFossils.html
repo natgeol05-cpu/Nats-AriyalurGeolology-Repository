@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Welcome Site</title>
+
+     <style>
+        div {
+            display: flex;
+        }
+        button {
+            color: solid black;
+            height: 50px; width: 250px;
+            border-radius: 20px;
+            display: inline-block                        
+        }
+        img { 
+            height: 250px;
+            width: 400px; 
+            margin: 20px; border-radius: 20px;  
+        }  
+
+       .img:hover {
+            transform: scale(2.5);
+            transition-duration: 2s;            
+        }
+
+    </style>
+</head>
+
+<body style="color: brown;">    
+    <div>
+    <input type="image" src="03 ProjImages/Arrow Left Very Small Amber.jpg" alt="Submit" width="100px" height="50px">
+
+    <a href="09 ProjHtmlWebPages/AriyalurGeologyPage.html">
+       <button> Click here To Go Back</button></a> 
+    </div>
+
+    <h3>Use Back Button above to go back to Home Page</h3>
+
+    <h1 align="center" style="
+        color: rgb(44, 7, 255);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 60px;
+        ">Hello Geology Students
+    </h1>
+    
+
+    
+ 
+    
+    <p style="font-size: 1.6rem;"> Welcome to Geology WebSite  for Students Created By Natesan </p>
+   
+    <!-- <textarea style="background-color: rgb(255, 227, 104);" placeholder="Kindly Provide your Feedback"></textarea> -->
+
+        <!-- <button
+        style="
+            background-color: dimgray;
+            color: aliceblue;
+            border: none;
+            padding: 20px;
+            margin: 20px;
+        "
+        >Click Me !
+    </button> -->
+    <P><img class="img" align="center" src="03 ProjImages/Ganesha on Yellow Lotus .JPG" alt="Image" height="200px" border="10" title="Lord Ganesh"/></P>
+    <br>
+    <img class="img"  src="03 ProjImages/Rastellum - Bivalve.jpg" alt="Image" height="200px" border="10" title="Rastellum - bivalve"/>
+    <img class="img"  src="03 ProjImages\Ammonite suture ( Pachydesmoceras).JPG" alt="Image" height="200px" border="10" title="Ammonites sutures">
+    <img class="img"  src="03 ProjImages/Gongrochanus - echinoid.jpg" alt="Image" height="200px" border="10" title="Gongrochanus - echnoid">
+    <img class="img"  src="03 ProjImages/Nerinea - Gastropod.jpg"  alt="Image" height="200px" border="10" title="Nerina - Gastropod">
+    <img class="img"  src="03 ProjImages/Lucina-(Bivalve) forVB.jpg" alt="Image" height="200px" border="10" title="Lucina - bivalve">
+    <img class="img"  src="03 ProjImages/Ichthyosaurian vertebra (Marine reptile).JPG" alt="Image" height="200px" border="10" title="Ichthyosaurian vertebra (Marine reptile)">
+    <img class="img"  src="03 ProjImages/Ptillophyllum (Upper Gondwana plant).JPG" alt="Image" height="200px" border="10" title="Ptillophyllum - Plant Fossil">
+    <br> 
+    <!-- <button data-inline="true" 
+        style="
+            background-color: grey; border-radius: 25px;
+            color: rgb(255, 240, 240);
+            border: none; padding: 8px; margin: 20px;"
+        >Click here for description </button>  --> 
+
+          <button data-inline="true"; 
+            style="
+               background-color: grey; border-radius: 25px;
+               color: rgb(255, 240, 240);
+               border: none; padding: 1px; margin: 20px;"
+               onclick="showText()">
+                <p id="displayText"> Click here for description </p>
+
+        <script>
+            function showText(){
+                document.getElementById("displayText").textContent="Fossils of Rastellum are found from the Middle Jurassic until the Late Cretaceous (age range: from 161.2 to 66.043 million years ago.).[7] They are present in the Cretaceous marine strata throughout the world.";
+            }
+        </script>
+       </button>
+ 
+        <button style="font-size: 25px; background-color: greenyellow; padding: 1px;"></button>
+ 
+
+    <button data-inline="true" 
+        style="
+            background-color: grey; border-radius: 25px;
+            color: rgb(255, 240, 240);
+            border: none; padding: 8px; margin: 20px;"
+        >Click here for description
+    </button>
+
+    <hr>
+    <b style="font-size: 1.4rem;">The name of some fossils you may find in the field</b>
+    <ol>
+        <li> Ammonites
+            <ol>
+                <li>Pachydiscus peramplus</li>
+                <li>Pachydiscus gollevillensis</li>
+                <li>Holcodiscus theobaldianus</li>
+                <li>Brahmaites brahma</li>
+                <li>Brahmaites vishnu</li>
+                <li>Desmoceras latidorsatum</li>
+            </ol>
+        </li>
+        <li>Fossil Wood</li>
+        <li>Gongrochanus - echinoid</li>
+        <li>Lucinia -bivalve</li>
+        <li>Nerinea - gastropod</li>
+        <li>Rastellum - -bivalve</li>
+    </ol>
+    <dl>
+        <dt img="03 ProjImages\Rastellum - Bivalve forVB.jpg">Rastellum Fossil</dt>
+        <dd>Fossils of Rastellum are found from the Middle Jurassic until</dd> 
+            <dd>the Late Cretaceous (age range: from 161.2 to 66.043 million years ago.)</dd>
+                <dd>They are present in the Cretaceous marine strata throughout the world.</dd>
+    </dl>
+ 
+       <hr>
+    "Estimated Expenses (in Rupees) for 14 person for Fossil Sites at Ariyalur"<br/>
+    "This 14 includes two Guides, a trip for two days in a minibus"<br/>
+    <br>
+ 
+    <table style="margin-right: 20px" margin="30" border="5">
+        <th style="background-color: darksalmon;">Transport</th>
+        <th style="background-color: darksalmon;">Stay</th>
+        <th style="background-color: darksalmon;">Food</th>
+        <th style="background-color: darksalmon;">Misc</th>
+        <tr>
+            <td style="background-color: rgb(216, 223, 10);" align="middle">3000</td>
+            <td style="background-color: rgb(216, 223, 10);" align="middle" font="bold">2500</td>
+            <td style="background-color: rgb(216, 223, 10);" align="middle">8500</td>
+            <td style="background-color: rgb(216, 223, 10);"align="middle">2000</td>    
+        </tr>        
+    </table>
+
+    <br>
+    
+     <p style="display: inline-block;">Check your Mail :  
+        <a href="https:www.yahoo.com">Click here to Check Mail</a>
+     </p> 
+</body>
+</html>

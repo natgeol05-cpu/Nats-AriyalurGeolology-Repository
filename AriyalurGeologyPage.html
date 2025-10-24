@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ariyalur Geology Page</title>
+    <style>
+        .grid {
+            display: grid; border: 1px solid black;
+            margin: auto; padding: 20px;            
+            gap: 20px; background-color: aquamarine;
+            grid-template-columns: 310px auto 310px;
+            grid-template-rows: 250px auto 250px;
+            grid-template-rows:auto;
+            column-gap: 10px; row-gap: 3px;
+            justify-content: flex-start;
+            align-items: center;                 
+        }
+
+        .item {
+            border: 1px solid blue;  height: auto;
+            border-radius: 20px; text-align: center;
+            background-color: white; 
+        }
+
+        img { 
+            height: 165px;  width: 280px;    
+            } 
+
+        .item:hover {
+            transform: scale(1.5);
+            transition-duration: 2s;
+            }
+
+        #box1 {
+            height:200px;
+            border: 15px;
+        }    
+       
+        #box2 {
+               transform: none; 
+               overflow: auto;  
+               height: 130px; 
+            } 
+        #box3 {
+            width:280px;
+            height: 190;
+        }    
+
+        #box4 {
+            text-align: left; padding-top: 50px;
+            transform: none;  
+            height: 350px;
+            background-color: #F79B72;
+            }
+
+        #box5 {         
+            transform: none;  padding: 10px;
+            background-color: lightgoldenrodyellow;   
+            height: 400px; overflow: auto;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            }
+
+        #box6 {
+            align-self: end;
+           
+        }
+
+        #box7{
+            transform: none;  font-style: color="Blue";
+            background-color: bisque;
+            grid-column-start: 2;
+            grid-column-end: 3; grid-row-start: 3;
+            align-self: end;  overflow: auto;
+             }
+
+        #box8 {
+            width: max-content 300px;
+            grid-column-start: 3;
+            align-self: end;
+        }
+
+        h2 {
+            color: brown;
+        }
+
+        h3 {
+            color: blue;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2 style="text-align: center;"> Welcome to Ariyalur Fossils Web Site</h2>
+
+    <div class="grid">
+
+        <div class="item" id="box1" > Restellum - bivalve
+            <img  src="03 ProjImages/Rastellum - Bivalve Watermarked.jpg" alt="Restellum" title="Rastellum - Bivalve">
+        </div>
+
+        <div class="item" id="box2">
+            <h2>Geology of Ariyalur</h2>
+            <h3>Cretacious Fossil Sites</h3>
+        </div>
+
+        <div class="item" id="box3"> Ammonite_suture
+            <img src="03 ProjImages/Ammonite_suture titled with size.jpg" alt="Ammonites sutures" title="Ammonite_suture">
+        </div>
+
+        <div class="item" id="box4" > || --- Menu Bar --- ||
+            <ul>
+                <li><a href="AriyalurLocationMap.html"> Location Map</Map></a></li>
+                <li><a href="AriyalurMap.html"> Geological Map</Map></a></li>
+
+                <li><a href="AriyalurStratigraphy.html"> Stratigraphy</a></li>
+                <li><a href ="AriyalurLithography.html"> Lithology</a></li>
+
+                <li><a href="AriyalurFossilSites.html"> Fossil Sites</a></li>
+                <li><a href ="AriyalurBiozones.html"> Biozones</a></li>  
+
+                <li><a href ="AriyalurFossilsGallery.html"> Fossils Gallery</a></li>
+                <li><a href ="AriyalurIndustries.html"> Industries</a>
+            </ul>    
+        </div>
+
+        <div class="item" id="box5" style="font-size:18px;">Introduction to a Fossil Sites in Ariyalur
+            <p></p> The Cretaceous rocks are exposed in Ariyalur area in South India.<br> These rocks formations are grouped into four groups namely, the Niniyur,<br> Ariyalur, Trichinopoly, and Uttatur, groups. </p>
+
+            <p> Outcrops of these groups are seen in Ariyalur and in its surounding areas.<br> In these outcrops we find fossils like Ammonites, Bivalues, Gastropods,<br> Echinoids, Plant fossils, etc. </p>
+
+            <p>In the Menu Bar on the left side has various menu items.<br> By Clicking on the items, the relevent web page will open for you to explore.</p>
+            The contents in these webpages are only for educational purpose.<br> Most of it are incorporated from different webpages offering free downloads ie. from public domins.
+
+
+            <P> For any doubt or clarification needed , do no hesitate to contact (details below).</P> 
+            <p> This Website is developed with the help and continues encouragement of Dr Ayyasami, Dr Bala Gowtham and others. I especially thank them here.</p></div>
+
+        <div class="item" id="box6">Reptile caudal vertebra
+            <img src="03 ProjImages/Ichthyosaurian vertebra (Marine reptile).JPG" alt="Ichthyosaurian vertebra" title="Ichthyosaurian vertebra">
+        </div>
+        
+        <div class="item" id="box7" style="color: blue;">Contact Details 
+            <br>Email: natgeolo5@gmail.com</p>
+            People contributed in creating this Website are:<p>
+            1. Dr K Ayyaswami DyDG GSI (Retd.)<br>
+            2. Dr B Gowtham HOD, Geology Dept. Arts College, Coimabatore, Tamilnadu, India.<br>
+            3. D Charles, Faculty from Presidency College, Chennai, India.
+
+              
+        </div>
+
+        <div class="item" id="box8"> Geologist's Field Tools
+            <img src="03 ProjImages/Geologist's Field Tools.jpg" alt="Plant Fossil" title="Ptillophyllum">
+        </div>  
+            
+    </div>
+
+    
+    
+        
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        .grid {
+            display: grid;
+            border: 5px crimson; margin: auto;
+            height: 1050px; width: auto;
+            background-color: aquamarine;             
+        }
+
+         .title-container {
+            display: flex;
+            align-items: center;         
+            border: 1px;
+            margin: auto;  
+            column-gap: 20px;           
+        } 
+
+         .fixed-div{
+            position: sticky;
+            top: 0; /* This makes it stick to the top when scrolled */
+            width: 100%; /* Ensures it spans the full width */
+            text-align: center; /*To place images/text in the center of div */
+            padding-top: 2px; /* To place a gap on top */
+            z-index: 1000; /*Ensures it stays above other content */
+        }
+
+        .item {                      
+            border: solid brown;  border-radius: 20px;
+            padding: 5px;
+            text-align: center; background-color: lightyellow;
+          }
+
+        button {
+            color: solid black;
+            height: 60px; width: 300px;
+            border-radius: 20px;
+            display: inline-block;            
+        }
+
+        #button:hover {
+            background-color: goldenrod;
+            color: white; height: 60px;
+        }
+
+        h2 {
+            color: chocolate;
+            margin-top: 0%;
+            margin-bottom: 0px;
+        }
+
+        h3 {
+            color: chocolate; 
+            margin-top: 0; margin-bottom: 0;
+            text-align: center;   
+        }
+
+        h4 {
+            color: rgb(49, 3, 80); margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        #box1 {
+           background-color:lightsteelblue;             
+        }
+
+        #box2 {
+            background-color: bisque;   
+       }
+
+        #box3 {
+            background-color: #DDF6D2;
+        }
+
+        img {
+            padding: 10px;
+            display: inline-flex;
+        }
+
+        img:hover {
+            transform: scale(2);
+            transition-duration: 2s;
+            }
+        
+        #box5 {
+           background-color: #FB9E3A;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+
+    <div class="title-container" style="display: flex;">
+
+    <input type="image" id="image" src="03 ProjImages/Arrow Left Very Small Amber.jpg" alt="Submit" width="90px" height="60px">
+
+    <a href="DescRastellum.html">
+       <button id="button"> Click here To Go Back to Previous Specimen</button></a> 
+
+       <h3>Geology of Ariyalur Web Site<br> Browse Specimens in Gallery</h3> 
+
+    <a href="DescTrigonoarca abrupta.html">
+       <button id="button"> Click Here To Go to Next Item in Gallery</button></a> 
+
+       <input type="image" src="03 ProjImages/Arrow Right Very Small Amber.jpg" alt="Submit" width="90px" height="60px" >    
+    </div>
+
+        <div class="item" id="box1">
+            <h2> Lucina - bivalve</h2>
+        </div>
+        <h4> For Enlarged View place cursor over the images</h4>
+        <div class="fixed-div" id="box2">
+            <img height="200" src="03 ProjImages/Lucina-(Bivalve) Watermarked.jpg">
+            <img height="200" src="03 ProjImages/Lucina Scientific Classification.jpg" > 
+            <img height="200px" src="03 ProjImages/Lucina from Italy.jpg"></div>
+
+        <div class="item" id="box3" style="font-size: 20px;"><h3>Description</h3>
+            <article>
+                Name: Lucina - bivalve <br>
+    Formation: Bivales in all Formations of Ariyalur <br>
+    Locality: Exact location of specimen not available  <br>
+    Classification: Mollusca - Bivalvia -Lucinida - Genus: Lucina<br>
+    Age: Range: from 388.1 to 0.012 million years ago  <p>
+                Lucina is a genus of saltwater clams, marine bivalve molluscs.<br>
+                 Fossils of Lucina are found in marine strata from the Devonian until<br> the Quaternary (age range: from 388.1 to 0.012 million years ago). <br>
+<br>
+The members of the genus Lucina, as other members of the family Lucinidae, <br>are found in muddy sand or gravel at or below low tide mark.<p> 
+    
+    They have characteristically rounded shells with forward-facing projections. <br>The valves are flattened and etched with concentric rings.<br> Each valve bears two cardinal and two plate-like lateral teeth.<p> 
+    
+    These molluscs do not have siphons but the extremely long foot makes a channel<br> which is then lined with slime and serves for the intake and expulsion of water.<p>
+
+Ref: https://en.wikipedia.org/wiki/Lucina_(bivalve)<br>
+Ref: 02 https://www.ias.ac.in/article/fulltext/jess/132/0116<br> (Dr Ayyasami's name repeatedly mentioned)
+            </article>
+        </div>
+        
+        <div class="item" id="box4">For detailed information read the references given above, especially for UPSC exams. </div>
+
+        <div class="item" id="box5">
+            <a href="AriyalurFossilsGallery.html">
+       <button id="button"> Click Here To Go Back to Gallery Page </button></a> 
+        </div>
+
+        <!-- <div class="item" id="box6">item 6</div>
+        <div class="item" id="box7">item 7</div>
+        <div class="item" id="box8">item 8</div> -->
+    </div>   
+
+</body>
+</html>

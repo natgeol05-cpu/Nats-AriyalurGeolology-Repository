@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description of Rastellum - Bivalve</title>
+    <style>
+        .grid {
+            display: grid;
+            border: 5px crimson; margin: auto;
+            height: 1050px; width: auto;
+            background-color: aquamarine;             
+        }
+
+        .title-container {
+            display: inline-flex;
+            align-items: center;         
+            border: 1px;
+            margin: auto;  
+            column-gap: 20px;          
+        } 
+
+        .fixed-div{
+            position: sticky; 
+            top: 0; /* This makes it stick to the top when scrolled */
+            width: 100%; /* Ensures it spans the full width */
+            text-align: center; /*To place images/text in the center of div */
+            padding-top: 2px; /* To place a gap on top */
+            z-index: 1000; /*Ensures it stays above other content */
+        }        
+
+        .item {                      
+            border: solid brown;  border-radius: 20px;
+            padding: 5px; 
+            text-align: center; background-color: lightyellow;            
+        }
+
+        button {
+            color: solid black;
+            height: 60px; width: 300px;
+            border-radius: 20px;
+            display: inline-block;            
+        }
+
+        #button:hover {
+            background-color: goldenrod;
+            color: white;
+        }
+
+        h2 {
+            color: chocolate;         
+            margin-top: 0; 
+            margin-bottom: 0;        
+        }
+
+        h3 {
+            color: chocolate; 
+            margin-top: 0; margin-bottom: 0;
+            text-align: center;   
+        }
+
+        h4 {
+            color: rgb(49, 3, 80); margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        #box1 {
+           background-color:lightcoral;
+        }
+
+        #box2 {
+            background-color: bisque;
+        }
+
+        #box3 {
+            background-color: #DDF6D2;
+        }
+        img {
+            padding: 10px;
+            display: inline-flex;
+        }
+
+        img:hover {
+            transform: scale(2);
+            transition-duration: 2s;
+            }
+        
+        #box5 {
+           background-color: #FB9E3A;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+
+        <div class="title-container" style="display: flex;">
+       
+    <input type="image" id="image" src="03 ProjImages/Arrow Left Very Small Amber.jpg" alt="Submit" width="90px" height="60px" >
+
+    <a href="AriyalurFossilsGallery.html">
+       <button id="button"> Click here To Go Back to Gallery</button></a> 
+
+       <h3>Geology of Ariyalur Web Site<br> Browse Specimens in Gallery</h3>  
+
+    <a href="DescLucinabivalve.html">
+       <button id="button"> Click Here To Go to Next Item in Gallery</button></a> 
+
+       <input type="image" src="03 ProjImages/Arrow Right Very Small Amber.jpg" alt="Submit" width="90px" height="60px">    
+    </div>
+
+        <div class="item" id="Box1" >
+           <h2> Rastellum - bivalve </h2>
+        </div>
+        <h4> For Enlarged View place cursor over the images</h4>
+        <div class="fixed-div"  id="box2">
+            <img height="200" src="03 ProjImages/Rastellum - Bivalve Watermarked.jpg">
+            <img height="200" src="03 ProjImages/Rastellum Scientific classification.jpg" > 
+            <img height="200px" src="03 ProjImages/Rastellum from Medagascar.jpg"></div>
+
+        <div class="item" id="box3" style="font-size: 20px;"><h3>Description</h3>
+            <article>
+                Name: Rastellum 12<br>
+    Formation: in Cretaceous Karai Formation <br>
+    Locality: near Kulakkalnattham   <br>
+    Classification: Mollusca - Bivalvia -Ostreida - Arctostreidae<br>
+    Age: Range: from 161.2 to 66.043 million years ago  <p>
+
+                Fossils of Rastellum are found from the Middle Jurassic until the Late Cretaceous<br>(age range: from 161.2 to 66.043 million years ago.).<br>
+                 They are present in the Cretaceous marine strata throughout the world,<br> including in Ariyalur at Dalmiapuram. <br>
+<br>
+The shells of molluscs of Rastellum species can reach a length of about 10 cm (3.9 in).<br> These oysters had a narrow-valved, tubular shell, which was composed of regularly<br> alternating sharp ridges and deep folds. <br>The vulnerable commissure (along which the valves meet) was sunk.<p>
+Lifestyle:
+
+This genus inhabited warm waters, where it cemented itself<br> with the pointed vertebrae to shells or corals.<br> Oysters belonging to the genus Rastellum were stationary epifaunal suspension feeders.<br><br>
+
+Ref: https://en.wikipedia.org/wiki/Rastellum
+            </article>
+       </div>
+       
+        <div class="item" id="box4">For more information go online </div>
+
+       <div class="item" id="box5">
+            <a href="AriyalurFossilsGallery.html">
+       <button id="button"> Click Here To Go Back to Gallery Page </button></a> 
+        </div>
+
+        <!-- <div class="item" id="box6">item 6</div>
+        <div class="item" id="box7">item 7</div>
+        <div class="item" id="box8">item 8</div> -->
+    </div>   
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website for Geology Students</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .nav {
+            margin-top: 15px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Sections */
+        .section {
+            padding: 50px 20px;
+            margin: 0 auto;
+            max-width: 1500px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #444;
+            max-width: 1500px;
+        }
+
+        /* About Section */
+        #about p {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* Experience Section */
+        .experience {
+            display: flex;
+            /* flex-wrap: wrap; */ grid-column: 15px;
+            justify-content: space-between;
+        }
+
+        .article {
+            width: 48%;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            grid-column: 15px;
+        }
+
+        .article h3 {
+            margin-top: 0;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .article p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-between;
+        }
+
+        .skills .article {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .projects .article {
+            width: 31%;
+            text-align: center;
+        }
+
+        .projects .article img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 150px;
+        }
+
+        /* Contact Section */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            margin: 10px 0 5px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+            .experience,
+            .skills,
+            .projects {
+                flex-direction: column;
+            }
+
+            .experience .article,
+            .skills .article,
+            .projects .article {
+                width: 1500%;
+                margin-bottom: 20px;
+            }
+
+            .nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .section {
+                padding: 30px 15px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .section h2 {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .nav a {
+                font-size: 14px;
+            }
+
+            .section h2 {
+                font-size: 22px;
+            }
+
+            .footer {
+                font-size: 14px;
+            }
+
+            .footer a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1> 😂 Natesan Ramaswami</h1>
+        <div class="nav">
+            <a href="#about">About Me 🤔</a>
+            <a href="#experience">Experience 💼</a>
+            <a href="#skills">Skills 🛠️</a>
+            <a href="#portfolio">My Work 💻</a>
+            <a href="#contact">Contact 📬</a>
+        </div>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Me and My Website</h2>
+        <p>Welcome to my Home Page. I am a web developer with a passion for creating Contents and 
+            Images in websites for Geology Students. 🚀
+        </p>
+    </div>
+
+    <div class="section" id="experience">
+        <h2>Experience 💼</h2>
+        <div class="experience">
+            <div class="article">
+                <h3>My experience in Geology Subject🖥️</h3>
+                <p>I am an Alumni of Geology Department, The Presidency College, Chennai.</p>
+                <p>Conducted classes, seminars and workshop for students from 2010-11 acadamic year. 
+                    During Covid period conducted many Webinars for students of many Colleges in Tamilnadu.</p>
+            </div>
+            <div class="article">
+                <h3>Web Developer  🌐</h3>
+                <p>Developed this Webste for college students. In fact created Website 'studyonline.com' in 2002 itself. </p>
+                <p>Now in 2025, India is considered Digital Capital of the World with deep penetration in common man's life, 
+                    irrespective of level of education.</p>
+               <p> Considering this, my website is full with contents and images for Geology Studnts to learn lot. 
+                Most of the content from Public Domins and most of images from my own large photo library.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="skills">
+        <h2>Skills 🛠️</h2>
+        <div class="skills">
+            <div class="article">
+                <h3>HTML & CSS 📄</h3>
+                <p>Used Visual Code in creating semantic and accessible HTML documents, styling with modern CSS techniques including Flexbox and Grid.</p>
+            </div>
+            <div class="article">
+                <h3>JavaScript & React ⚛️</h3>
+                <p>Experienced in building interactive user interfaces Website after undergoing two years of intesive course in Javascript. Now, in Visual Code this Website is developed for students.</p>
+            </div>
+            <div class="article">
+                <h3>Responsive Design 📱</h3>
+                <p>  This websit is developed keeping in mind the spread of digitilisation and multiple divices used by all. So desinged this responsive websites that work across a variety of devices using media queries and
+mobile-first design principles.</p>
+            </div>
+            <div class="article">
+                <h3>Version Control with Git 🌳</h3>
+                <p>Comfortable with Git for version control, including branching, merging, and collaborating on projects
+                    using GitHub or GitLab.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="portfolio">
+        <h2>My Projects 🎨</h2>
+        <div class="projects">
+            <div class="article">
+                <h3>Project 1 🎯</h3>
+                <img src="../images/p1.png" alt="Project 1">
+                <p>This is a description of my first project. 💡</p>
+            </div>
+            <div class="article">
+                <h3>Project 2 🛠️</h3>
+                <img src="../images/p2.png" alt="Project 2">
+                <p>This is a description of my second project. 🔧</p>
+            </div>
+            <div class="article">
+                <h3>Project 3 🌐</h3>
+                <img src="../images/p3.png" alt="Project 3">
+                <p>This is a description of my third project. 🌍</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact Me 🤝</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send 🚀</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Connect with me on <a href="#">LinkedIn</a> | <a href="#">GitHub</a> 🌐</p>
+    </div>
+</body>
+
+</html>
