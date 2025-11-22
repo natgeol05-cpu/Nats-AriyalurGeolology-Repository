@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description for Mariella bergeri</title>
+<style>
+        .grid {
+            display: grid;
+            border: 5px crimson; margin: auto;
+            height: 1050px; width: auto;
+            background-color: aquamarine;             
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;         
+            border: 1px;
+            margin: auto;  
+            column-gap: 20px;           
+        } 
+
+        .fixed-div {
+            position: sticky;
+            top: 0; /* This makes it stick to the top when scrolled */
+            width: 100%; /* Ensures it spans the full width */
+            text-align: center; /*To place images/text in the center of div */
+            padding-top: 2px; /* To place a gap on top */
+            z-index: 1000; /*Ensures it stays above other content */
+        }
+
+        .item {                      
+            border: solid brown;  border-radius: 20px;
+            margin: 10px; padding: 5px;
+            text-align: center; background-color: lightyellow;
+             
+        }
+
+         button {
+            color:  black;
+            height: 60px; width: 300px;
+            border-radius: 20px;
+            display: inline-block;            
+        }
+
+        #button:hover {
+            background-color: goldenrod;
+            height: 60px;
+            color: white;
+        }
+
+        h2 {
+            color: chocolate;
+            margin-top: 0; 
+            margin-bottom: 0;
+        }
+
+        h3 {
+            color: chocolate; margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        h4 {
+            color: rgb(49, 3, 80); margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        #box1 {
+           background-color:beige;
+        }
+
+        #box2 {
+            background-color: bisque;
+        }
+
+        #box3 {
+            background-color: #DDF6D2;
+        }
+        img {
+            padding: 10px;
+            display: inline-flex;
+        }
+
+        img:hover {
+            transform: scale(1.8);
+            transition-duration: 2s;
+            }
+        
+        #box5 {
+           background-color: #FB9E3A;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+
+        <div class="title-container" style="display: flex;">
+
+    <input type="image" id="image" src="Arrow Left Very Small Amber.jpg" alt="Submit" width="90px" height="60px">
+
+    <a href="DescSphenoceramus.html">
+       <button id="button"> Click To Go Back to Previous Specimen</button></a> 
+
+       <h3>Geology of Ariyalur Web Site<br> Browse Specimens in Gallery</h3>  
+
+    <a href="DescEubaculitesVaginia.html">
+       <button id="button"> Click Here To Go to Next Item in Gallery</button></a> 
+
+       <input type="image" src="Arrow Right Very Small Amber.jpg" alt="Submit" width="90px" height="60px" >    
+    </div>
+
+        <div class="item" id="box1">
+            <h2> Mariella bergeri</h2>
+        </div>
+        
+        <div class="fixed-div" id="box2">
+            
+        <h4> For Enlarged View place cursor over the images</h4>
+        
+            <img height="200" src="Mariella bergeri.JPG">
+            <img height="200"src="Mariella bergeri Scientific Classification.jpg">
+            <img height="200"src="Mariella bergeri NHM Tokyo.jpg">  
+        </div>
+
+        <div class="item" id="box3" style="font-size: 20px;"><h3>Description</h3>
+            Name: Mariella bergeri<br>
+            Formation: <br>
+            Locality:    <br>       
+            Classification: Molluscs: Cephalopoda:Ammonoidea: Ammonitida: SubOrder - Ancyloceratina, Family - Turrilitidae 
+            <p>
+            <article>
+                Mariella is an ammonoid genus, named by Nowak (1916) from the upper Albian and Cenomanian stages <br>
+                the mid Cretaceous, included in the Turrilitidae. Its type is Turrilites bergeri
+                <br> 
+
+                <p>
+                Description
+                Mariella resembles Turrilites in general form. The shell is asymmetric, closely wound in<br>
+                a long expanding trochoidal spire. <br>
+                Ribs are slightly oblique and are rather feeble, each with 4 more or less equally spaced tubercles. <br>
+                Turrilites differs primarily in being more strongly ribbed and in having a more oval aperture.<br>
+
+                <p>
+                Distribution
+                Fossils of Mariella have been found in Angola, Antarctica, Australia, Brazil, Canada (British Columbia), <br>
+                Colombia (Hiló Formation), France, Germany, Iran, Japan, Kazakhstan, Madagascar, Mexico, Mozambique, <br>
+                New Zealand, South Africa, Spain, Switzerland, Turkmenistan, Ukraine, the United Kingdom, and <br>
+                the United States (California, Texas, Oregon).
+. 
+
+                <p>
+                Further reading
+                •	Arkell, W.J.; Kummel, B.; Wright, C.W. (1957). Mesozoic Ammonoidea. Treatise on Invertebrate Paleontology,<br>
+                •	 Part L, Mollusca 4. Lawrence, Kansas: Geological Society of America and University of Kansas Press.                
+                <br><br>
+
+                Ref: 01 Field Trip Guide - SR010 post-Congress Field Trip by Dr B. Gowtham and Dr K. Ayyasami<br>
+                Ref: 02 Wikipedia, the free encyclopedia <br> 
+            </article>
+        </div>
+
+        <!-- <div class="item" id="box5">
+            <h4> For Enlarged View place cursor over the images</h4>
+            <img height="220" src="Tridacna gigas - Gaint Clam with Distinct  Water Marks.JPG"> 
+            <img height="220px" src="Large Inoceramus Greenland.jpg"><br> Fossil Kossimaticeras are found in gaint sizes.
+        </div> -->
+
+        <div class="item" id="box4">For more information refer to links given above </div>
+
+        <div class="item" id="box5">
+            <a href="AriyalurFossilsGallery.html">
+            <button id="button"> Click Here To Go Back to Gallery Page </button></a> 
+        </div>
+
+    </div>   
+
+</body>
+
+</html>
+
